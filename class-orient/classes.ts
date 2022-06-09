@@ -45,3 +45,16 @@ const kimchi = new Word("kimchi", "korean food")
 const dict = new Dict()
 dict.add(kimchi)
 dict.def("korean food")
+
+interface User {
+    name: string;
+}
+
+interface Tester extends User {
+    phone: number;
+}
+
+const tester: Tester = {
+ 'name': "aaa0",
+ 'phone': 123   
+}
